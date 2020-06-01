@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/mj.png');
+            background-size: 1100px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            image-resolution: 1px;
+
+
+        }
+
+        .left img {
+
+            width: 56px;
+            height: 34px;
+            filter: invert(10%);
+            padding: 0px 17px;
+
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 49%;
+            margin: 10px auto;
+
+            /* agar yeh 3 ek sath set kare to hmm kese bhi element ko center kar sakte hai  */
+
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            right: 9px;
+            top: 15px;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            padding: 4px 5px;
+            color: white;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: rgb(250, 243, 243);
+            text-decoration: none;
+
+            padding: 6px 6px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 2px solid #ca7a7a;
+            margin: 70px 80px;
+            padding: 30px 30px;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .formgroup input {
+            margin: 5px auto;
+            padding: 2px 2px;
+            text-align: center;
+            display: block;
+            width: 73%;
+            font-size: 20px;
+            border-radius: 10px;
+
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 27px;
+        }
+
+        .container button {
+            display: block;
+            width: 75%;
+            margin: 10px auto;
+            padding: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <!-- left me logo -->
+            <img src="img/m.png" alt="">
+            <div>
+                Akshat Fitness
+
+            </div>
+        </div>
+        <div class="mid">
+            <!-- mid for nav bar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <!-- right me kuch buttons -->
+            <button class="btn">contact us </button>
+            <button class="btn"> email us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> join the best gym in mumbai</h1>
+        <form action="xyz.php">
+            <div class="formgroup">
+
+                <input type="text" name="name" id="" placeholder="enter your name">
+            </div>
+            <div class="formgroup">
+
+                <input type="number" name="" id="" placeholder="enter your age">
+            </div>
+            <div class="formgroup">
+
+                <input type="text" name="" id="" placeholder="enter your gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="enter your locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="enter your email adress">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" id="" placeholder="enter your mobile no.">
+            </div>
+            <button class="btn">
+                submit
+            </button>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
